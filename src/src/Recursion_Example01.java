@@ -46,20 +46,52 @@ public class Recursion_Example {
 //        int n=1;
 //        gagan(n,0);
 //    }
-//print sum of n fectorial number....
-public static int gagan(int n){
-    if (n == 1||n==0) {
-        return 1;
+////print sum of n fibbonacci number....
+//public static int gagan(int n){
+//    if (n == 1||n==0) {
+//        return 1;
+//
+//    }
+//
+//   return gagan(n-1)+gagan(n-2);
+//}
+//    public static void main(String[] args) {
+//        int n=5;
+//        int ans=gagan(n);
+//        System.out.println(ans);
+//    }
 
+    ////print sum of n fictorial number....
+//    public static int gagan(int n){
+//        if (n == 1||n==0) {
+//            return 1;
+//
+//        }
+//        return n*gagan(n-1);
+//    }
+//
+//    public static void main(String[] args) {
+//        int n=5;
+//        int ans=gagan(n);
+//        System.out.println(ans);
+//    }
+
+    //print x^n(stack hight=n)
+    public static int gagan(int n,int x){
+        if (n==0) {
+            return 1;
+        } if (x==0) {
+            return 0;
+        }
+        int xpownm1=gagan(x,n-1);
+        int xpow=x*xpownm1;
+        return xpow;
     }
-
-   return gagan(n-1)*gagan(n-2);
-
-}
 
     public static void main(String[] args) {
         int n=5;
-        int ans=gagan(n);
+        int x=5;
+        int ans=gagan(x,n);
         System.out.println(ans);
     }
 }

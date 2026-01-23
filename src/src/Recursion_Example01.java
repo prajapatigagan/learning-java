@@ -1,4 +1,4 @@
-public class Recursion_Example {
+public class Recursion_Example01 {
 
 //    //numbers from 5 to 1....
 //   public static void gagan(int n){
@@ -76,22 +76,5 @@ public class Recursion_Example {
 //        System.out.println(ans);
 //    }
 
-    //print x^n(stack hight=n)
-    public static int gagan(int n,int x){
-        if (n==0) {
-            return 1;
-        } if (x==0) {
-            return 0;
-        }
-        int xpownm1=gagan(x,n-1);
-        int xpow=x*xpownm1;
-        return xpow;
-    }
 
-    public static void main(String[] args) {
-        int n=5;
-        int x=5;
-        int ans=gagan(x,n);
-        System.out.println(ans);
-    }
 }

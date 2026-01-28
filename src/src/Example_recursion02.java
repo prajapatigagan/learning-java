@@ -102,20 +102,28 @@ public class Example_recursion02 {
 //    }
 
     //check sorted array....
-    public static boolean issorted(int arr[], int idx){
-    if(arr[idx]==arr.length){
-        return true;
-    }
-        if(arr[idx]<arr[idx+1]){
-           return issorted(arr,idx+1);
-        }
-       else{
-           return false;
-        }
-    }
+//    public static boolean issorted(int arr[], int idx){
+//    if(arr[idx]==arr.length){
+//        return true;
+//    }
+//        if(arr[idx]<arr[idx+1]){
+//           return issorted(arr,idx+1);
+//        }
+//       else{
+//           return false;
+//        }
+//    }
+//
+//    public static void main(String[] args) {
+//        int arr[]={1,2,3,4,5,6,7};
+//        System.out.println(issorted(arr,0));
+//    }
 
-    public static void main(String[] args) {
-        int arr[]={1,2,3,4,5,6,7};
-        System.out.println(issorted(arr,0));
-    }
+//    move all 'x' to the end of the string..
+public static void moveallX(String str,int idx, int count ,String newString){
+
+}
+public static void main(String[] args) {
+
+}
 }
